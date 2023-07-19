@@ -1,0 +1,20 @@
+<br>
+<div *ngIf="usuarioAutenticado">
+
+    <div class="card text-center ">
+      <div class="card-header ">
+        Información
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Bienvenido, {{ usuarioAutenticado.displayName }} (@{{usuarioAutenticado.uid}})</h5>
+        <div class="imgcontainer">      
+          <div class="imgcontent">
+            <img [src]="usuarioAutenticado.photoURL" class="img-fluid rounded-start" id="profile"> 
+          </div>    
+        </div>
+      </div>
+      <div class="card-footer text-body-secondary">
+        Fecha de creación: {{ usuarioAutenticado.metadata.creationTime | date:'dd-MM-yyyy' }}
+      </div>
+    </div>
+</div>

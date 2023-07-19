@@ -1,0 +1,60 @@
+.formularios{
+    display: flex;
+    flex-direction: column;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+  }
+  
+  label {
+    width: 120px;
+  }
+  
+  input, textarea {
+    flex: 1;
+  }
+
+  input{
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+  }
+  select{
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  button{
+    border-radius: 10px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    appearance: none;
+  }
+  button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s all;
+  }
+  .registerhere{
+    color: purple !important;
+}
+.btn-outline-dark{
+    font-weight: bold !important;
+    margin-bottom: 1%;
+}

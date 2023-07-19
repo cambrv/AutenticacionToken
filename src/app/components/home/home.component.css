@@ -1,0 +1,42 @@
+h2{
+    margin: 1%;
+    color: purple !important;
+}
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgcontent img {
+  margin: 1px; /* Ajusta los márgenes entre las imágenes según tus necesidades */
+  width: 200px;
+  border-radius: 10px;
+  padding: 1%;
+  }
+  
+  .botoncitobonito {
+    background: #af4cd9;
+    background-image: -webkit-linear-gradient(top, #af4cd9, #8b23a3);
+    background-image: -moz-linear-gradient(top, #af4cd9, #8b23a3);
+    background-image: -ms-linear-gradient(top, #af4cd9, #8b23a3);
+    background-image: -o-linear-gradient(top, #af4cd9, #8b23a3);
+    background-image: linear-gradient(to bottom, #af4cd9, #8b23a3);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none !important;
+  }   
+  .botoncitobonito a{
+    text-decoration: none !important;
+    color: white;
+  }

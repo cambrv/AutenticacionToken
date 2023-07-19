@@ -1,0 +1,18 @@
+<div class="componente-fondo">
+    <form>
+      <br>
+        <h2>Inicio de sesión</h2>
+        <div class="form-floating mb-3">
+          <input #Usuario type="text" name="email" required class="form-control" id="signup-email" placeholder="Escriba aquí">
+          <label for="floatingInput">Usuario</label>
+        </div>
+        <div class="form-floating">
+          <input #Pwd type="password" name="password" required class="form-control" id="signup-password" placeholder="Escriba aquí">
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+        <br>
+        <button (click)="onSubmit(Usuario.value, Pwd.value)" class="btn btn-outline-dark">Iniciar sesión</button>
+        <p> ¿No estás registrado? <a (click)="redirigir()" class="registerhere">  Registrate aquí</a>
+      </form> 
+  </div>
+  

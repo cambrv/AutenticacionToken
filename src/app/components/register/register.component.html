@@ -1,0 +1,24 @@
+<br>
+<h2>Registro</h2>
+<form class="formularios">
+    <div class="form-row">
+        <label for="email"> Email:  </label>
+        <input #Email type="text" id="email" name="email">
+    </div>
+    <div class="form-row">
+        <label for="bio"> Contraseña:  </label>
+        <input #Pwd type="password" id="password" name="password">
+    </div>
+    <div class="form-row">
+        <label for="nombre"> Nombre:  </label>
+        <input #Nom type="text" id="name" name="name">
+    </div>
+    <div class="form-row">
+        <label for="photo"> Foto:  </label>
+        <input #Foto type="text" id="photo" name="photo">
+    </div>
+    <button (click)="onSubmit(Email.value, Pwd.value, Nom.value, Foto.value)" >Registrarse</button>
+    <div class="form-row">
+        <p> ¿Ya estás registrado? <a (click)="redirigir()" class="registerhere">  Inicia sesión aquí</a>
+        </div>
+</form>
